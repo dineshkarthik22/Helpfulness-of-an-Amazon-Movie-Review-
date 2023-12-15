@@ -9,6 +9,8 @@ Amazon has the unique option of voting on a review as “Helpful”. This enhanc
 ## DATASET
 The total number of data points available in the Amazon movies review dataset was 4.6 million reviews. Since this was a very large corpus the data was shuffled and 500,000 reviews were randomly chosen. [8]
 
+<div align="center">
+  
 | Statistic                     | Value    |
 |-------------------------------|----------|
 | Number of Reviews             | 108,571  |
@@ -19,6 +21,8 @@ The total number of data points available in the Amazon movies review dataset wa
 | Reviews with No Helpful Votes | 238,736  |
 
 **Table 1:** Statistics on Dataset Considered
+
+</div>
 
 ## Data Pre-processing
 1. According to, Yang et al. [1] 80% of the reviews have fewer than five votes. Additionally, newly authored reviews and less well-known products have fewer opportunities to be read by other customers, and thus, cannot receive many votes. Hence, reviews with no helpfulness votes are removed. The intuition behind removing reviews with zero votes is that while training we do not wish to create a negative bias for reviews with no votes.
@@ -52,7 +56,8 @@ For building this predictive model, various regression models within the scikit-
 ### Model Comparison
 For this Amazon movie reviews dataset considered, the regular Linear regression and Ridge regression models performed poorly when compared to XGBoost and Random Forest Regression models. The latter had a good MSE when compared to the former. Between the latter, XGBoost performed the best and had a very low MSE value. Decision trees performed poorly even after fine-tuning. After undergoing multiple epochs of training, the Linear Regression model began to exhibit signs of overfitting on the training data, resulting in an elevated Mean Squared Error (MSE) in both the validation and test sets. The XGBoost algorithm demonstrates superior performance, even in a cold-start scenario where features such as "Review_By_User," "Num_Reviews," and "Confirmity_Val" have minimal impact on the model's overall performance. Whereas models like Random Forest Regressor and Decision trees had a significant increase in MSE.
 
-
+<div align="center">
+  
 | Model                    | MSE               | MAE               |
 |--------------------------|-------------------|-------------------|
 | XGBoost                  | 0.0571            | 0.1992            |
@@ -62,6 +67,8 @@ For this Amazon movie reviews dataset considered, the regular Linear regression 
 | Decision Trees           | 0.1105            | 0.2425            |
 
 **Table 2:** Results obtained
+
+</div>
 
 ## RESULTS
 
