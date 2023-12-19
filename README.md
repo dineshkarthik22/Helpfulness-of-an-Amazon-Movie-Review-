@@ -33,11 +33,38 @@ The total number of data points available in the Amazon movies review dataset wa
 ### Polarity and ratings
 To get a better score for the sentiment of reviews, the polarity score is calculated using TextBlob. The polarity suggests a Gaussian distribution. Whereas the rating distribution suggests spikes at ratings 1, 4, and 5. This prompts us to infer that even though users are rating movies on a high or low extreme, they are not likely to be negatively or positively polarized towards it. As described in the box plot, with changing ratings the increase in polarity is very gradual.
 
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/eba80efb-8401-4dd2-97b0-f994e0873304)
+
+**Figure 1:** Histogram of the polarity score distribution of the reviews
+
+
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/221d4916-9b00-4589-bea2-8c1e1997d668)
+
+**Figure 2:** Box plot for the relationship between polarity and ratings 
+
 ### Review Content
 Analysis of the most frequently occurring words in a sentence. To find the most frequently occurring words the stopwords and punctuations are removed and then the words are stemmed. In the context of movie reviews the stopwords from English corpora are appended with {"movie", "film", "see", "watch", "dvd"}. The results from this analysis are used in the bag of words model.
 
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/4450e418-13d8-4657-b3e2-b5d7e36b0924)
+
+**Figure 3:** Most frequently occurring unigrams.
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/91e8a06d-3a56-496d-94c2-a9481fdf2cca)
+
+**Figure 4:** Most frequently occurring bigrams.
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/b869f791-3111-41d3-9fc4-45926ad464f3)
+
+**Figure 5:** Most frequently occurring trigrams.
+
 ### Helpfulness Index
 The helpfulness votes ratio histogram does not follow any probabilistic distribution. From the box plot, we can infer that the reviews with higher ratings tend to have a higher helpfulness index.
+
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/83c33135-a06e-4d27-9cf3-a8caf27bf7a1)
+
+**Figure 6:** Histogram for distribution of Helpfulness votes ratio
+
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/78b95784-5813-44ab-a3a0-46de6ec4018f)
+
+**Figure 7:** Box plot of overall rating and  Helpfulness ratio
 
 ## PREDICTIVE TASK
 In the course of our exploratory data analysis, we discern intriguing trends concerning the helpfulness index, notable correlations with the rating, polarity, age of the review, and the number of reviews and reviews by the user. The goal of this project is to predict the helpfulness index of a given review and rank the reviews based on their helpfulness for a particular movie. Based on the features of movie reviews, the model should learn their impact on the helpfulness index and predict the helpfulness of new reviews.
@@ -47,6 +74,10 @@ To evaluate the value predicted by the model, we can use the Mean Squared Error 
 
 ### Correlation Matrix
 From Figure 10, Correlations between the overall rating of a movie and the review’s polarity are strongly correlated and this agrees with our general intuition that when a review has positive polarity it is highly likely to have a higher rating compared to neutral, negative reviews. The length of a review and its score exhibit a certain degree of correlation, as one would anticipate. This aligns with our earlier observation that products receiving higher reviews also tend to have longer reviews. The review length of a review is normalized based on the minimum and maximum length values.
+
+![image](https://github.com/kd2210/Helpfulness-of-an-Amazon-Movie-Review-/assets/49114256/f84c423f-3672-4e6e-898f-7e372e488aae)
+
+**Figure 8:** Correlation matrix of all features.
 
 ## MODEL DESCRIPTION
 
