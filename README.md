@@ -114,12 +114,20 @@ An ensemble model XGBoost performs well for the Amazon Movie Reviews dataset wit
 
 # REFERENCES
 [1] Yang, Y.; Yan, Y.; Qiu, M.; Bao, F. Semantic analysis and helpfulness prediction of text for online product reviews. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing, Beijing, China, 26–31 July 2015; pp. 38–44.
+
 [2] Hudgins, Triston; Joseph, Shijo; Yip, Douglas; and Besanson, Gaston () "Identifying Features and
 Predicting Consumer Helpfulness of Product Reviews," SMU Data Science Review: Vol. 7: No. 1, Article 11.
+
 [3] C Danescu-Niculescu-Mizil, G Kossinets, J Kleinberg and L Lee. How Opinions are Received by Online Communities: A Case Study on Amazon.com Helpfulness Votes. Proceedings of WWW, pp. 141--150, 2009.
+
 [4] Alsmadiv, Abdalraheem, Shadi Alzu'bi, Mahmoud Al-Ayyoub and Yaser Jararweh. “Predicting Helpfulness of Online Reviews.” ArXiv abs/2008.10129 (2020): n. Pag.
+
 [5] Park, Yoon-Joo. 2018. "Predicting the Helpfulness of Online Customer Reviews across Different Product Types" Sustainability 10, no. 6: 1735.
+
 [6] D Chehal, P Gupta, P Gulati Predicting the Usefulness of E-Commerce Products’ Reviews using Machine Learning Techniques. International Journal of Computing and Informatics November 2023.
+
 [7] Y. Liu, X. Huang, A. An, and X. Yu. Modeling and predicting the helpfulness of online reviews. IEEE international conference on data mining, 2008.
+
 [8] J. McAuley and J. Leskovec. From amateurs to connoisseurs: Modeling the evolution of user expertise through online reviews. International World Wide Web Conference Committee (IW3C2)., 2013
+
 [9] S. Krishnamoorthy. Linguistic features for review helpfulness prediction. Expert Systems with Applications, 2015.
